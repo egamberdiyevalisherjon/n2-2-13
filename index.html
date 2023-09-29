@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/css/minified/main.min.css" />
+    <title>BS 2 (Bootstrap)</title>
+  </head>
+  <body>
+    <header
+      id="main-header"
+      class="bg-white py-3 shadow border-bottom sticky-top"
+    >
+      <nav class="container d-flex justify-content-between align-items-center">
+        <a
+          href="#"
+          class="logo text-primary text-decoration-none fs-3 fw-bold d-none d-md-block"
+        >
+          Bekorchi Travel
+        </a>
+        <a
+          href="#"
+          class="logo text-primary text-decoration-none fs-3 fw-bold d-md-none"
+        >
+          BT
+        </a>
+        <ul
+          class="list-unstyled gap-3 align-items-center m-0 text-capitalize fs-5 d-none d-md-flex"
+        >
+          <li><a href="#" class="text-decoration-none text-reset">about</a></li>
+          <li>
+            <a href="#" class="text-decoration-none text-reset">contact</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-reset">locations</a>
+          </li>
+          <li><a href="#" class="btn btn-primary">login</a></li>
+        </ul>
+        <div class="d-md-none">
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#main-nav-sidebar"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="main-nav-sidebar"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Main Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-unstyled text-capitalize fs-5">
+                <li>
+                  <a href="#" class="text-decoration-none text-reset">about</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-reset"
+                    >contact</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-reset"
+                    >locations</a
+                  >
+                </li>
+                <li><a href="#" class="btn btn-primary">login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="showcase" class="py-3">
+      <div class="container d-lg-flex gap-3 align-items-center">
+        <div class="text-center text-lg-start col mb-3 mb-lg-0">
+          <h1 class="display-1">
+            Vaqtingni <span class="text-primary">bekor</span> o'tqazma!
+          </h1>
+          <h4 class="fw-normal">Bekorchi travel ni tanla.</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+            dolor, doloremque alias fuga necessitatibus, accusamus laborum
+            maiores reiciendis, esse consequuntur amet quam? Delectus animi vero
+            vel aut rerum error sunt.
+          </p>
+          <a href="#" class="btn btn-primary">Olg'a</a>
+        </div>
+        <div class="col">
+          <img src="images/northen-lights.jpg" class="w-100" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="places" class="py-3">
+      <div class="container">
+        <h2 class="display-2">Sayohat uchun yo'nalishlar</h2>
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card">
+              <img src="images/registon.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil, excepturi ex. Itaque, aspernatur! Voluptatibus
+                  reiciendis temporibus architecto nobis saepe, maxime assumenda
+                  ipsa a accusantium nostrum cum amet nihil neque doloribus!
+                </p>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex gap-1">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <span>$500 / Week</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary d-block">Hoziroq borish</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card">
+              <img src="images/registon.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil, excepturi ex. Itaque, aspernatur! Voluptatibus
+                  reiciendis temporibus architecto nobis saepe, maxime assumenda
+                  ipsa a accusantium nostrum cum amet nihil neque doloribus!
+                </p>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex gap-1">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <span>$500 / Week</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary d-block">Hoziroq borish</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="card">
+              <img src="images/registon.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil, excepturi ex. Itaque, aspernatur! Voluptatibus
+                  reiciendis temporibus architecto nobis saepe, maxime assumenda
+                  ipsa a accusantium nostrum cum amet nihil neque doloribus!
+                </p>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex gap-1">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <span>$500 / Week</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary d-block">Hoziroq borish</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="main-footer" class="text-bg-dark py-3">
+      <div
+        class="container d-md-flex align-items-start justify-content-between"
+      >
+        <a href="#" class="logo text-primary text-decoration-none fs-3 fw-bold">
+          Bekorchi Travel
+        </a>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-bg-dark">
+            <a href="#" class="text-reset text-decoration-none">About</a>
+          </li>
+          <li class="list-group-item text-bg-dark">
+            <a href="#" class="text-reset text-decoration-none">Contact</a>
+          </li>
+          <li class="list-group-item text-bg-dark">
+            <a href="#" class="text-reset text-decoration-none">Locations</a>
+          </li>
+          <li class="list-group-item text-bg-dark">
+            <a href="#" class="btn btn-primary">Login</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- <div class="container py-3">
+      <div class="row gx-0 gy-4 g-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="card">
+            <div class="card-header border-0">
+              <h2>Lorem, ipsum.</h2>
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti maiores vitae voluptatum veniam nam vel animi iusto?
+                Veniam cupiditate libero, animi accusamus vero modi architecto
+                quasi provident quam error unde?
+              </p>
+            </div>
+            <div class="card-footer d-flex gap-3 border-0">
+              <a href="#" class="btn btn-outline-danger flex-fill">Read more</a>
+              <a href="#" class="btn btn-success flex-fill">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="card">
+            <div class="card-header">
+              <h2>Lorem, ipsum.</h2>
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti maiores vitae voluptatum veniam nam vel animi iusto?
+                Veniam cupiditate libero, animi accusamus vero modi architecto
+                quasi provident quam error unde?
+              </p>
+            </div>
+            <div class="card-footer d-flex gap-3">
+              <a href="#" class="btn btn-outline-danger flex-fill">Read more</a>
+              <a href="#" class="btn btn-success flex-fill">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="card">
+            <div class="card-header">
+              <h2>Lorem, ipsum.</h2>
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti maiores vitae voluptatum veniam nam vel animi iusto?
+                Veniam cupiditate libero, animi accusamus vero modi architecto
+                quasi provident quam error unde?
+              </p>
+            </div>
+            <div class="card-footer d-flex gap-3">
+              <a href="#" class="btn btn-outline-danger flex-fill">Read more</a>
+              <a href="#" class="btn btn-success flex-fill">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="card">
+            <div class="card-header">
+              <h2>Lorem, ipsum.</h2>
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti maiores vitae voluptatum veniam nam vel animi iusto?
+                Veniam cupiditate libero, animi accusamus vero modi architecto
+                quasi provident quam error unde?
+              </p>
+            </div>
+            <div class="card-footer d-flex gap-3">
+              <a href="#" class="btn btn-outline-danger flex-fill">Read more</a>
+              <a href="#" class="btn btn-success flex-fill">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 offset-xl-2 offset-xxl-0">
+          <div class="card">
+            <div class="card-header">
+              <h2>Lorem, ipsum.</h2>
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti maiores vitae voluptatum veniam nam vel animi iusto?
+                Veniam cupiditate libero, animi accusamus vero modi architecto
+                quasi provident quam error unde?
+              </p>
+            </div>
+            <div class="card-footer d-flex gap-3">
+              <a href="#" class="btn btn-outline-danger flex-fill">Read more</a>
+              <a href="#" class="btn btn-success flex-fill">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 offset-xl-2 offset-xxl-0">
+          <div class="card">
+            <div class="card-header">
+              <h2>Lorem, ipsum.</h2>
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti maiores vitae voluptatum veniam nam vel animi iusto?
+                Veniam cupiditate libero, animi accusamus vero modi architecto
+                quasi provident quam error unde?
+              </p>
+            </div>
+            <div class="card-footer d-flex gap-3">
+              <a href="#" class="btn btn-outline-danger flex-fill">Read more</a>
+              <a href="#" class="btn btn-success flex-fill">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="container-lg">
+      <h1 class="text-bg-success p-5 d-lg-inline-block flex-fill">
+        Hammaga Salom!
+      </h1>
+      <h1 class="text-bg-success p-5 d-lg-inline-block flex-fill">
+        Hammaga Salom!
+      </h1>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
